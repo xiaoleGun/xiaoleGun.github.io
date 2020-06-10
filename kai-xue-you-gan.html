@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="精解OpenCore, xiaoleGun">
+    <meta name="keywords" content="开学有感, xiaoleGun">
     <meta name="description" content="欢迎来到xiaoleGun&#39;Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>精解OpenCore | xiaoleGun</title>
+    <title>开学有感 | xiaoleGun</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -30,7 +30,7 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css"></head>
 
 
 <body>
@@ -332,12 +332,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">精解OpenCore</h1>
+                    <h1 class="description center-align post-title">开学有感</h1>
                 </div>
             </div>
         </div>
@@ -452,12 +452,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%96%AB%E6%83%85/">
+                                <span class="chip bg-color">疫情</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%BC%80%E5%AD%A6/">
+                                <span class="chip bg-color">开学</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%BC%80%E5%AD%A6%E6%9C%89%E6%84%9F/" class="post-category">
+                                开学有感
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -466,28 +483,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-28
+                    2020-06-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-05
+                    2020-06-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    499
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 
@@ -502,18 +519,70 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>欢迎大家来到我的博客,你们在这里会学到很多关于黑苹果的知识。我的博客有很多借鉴前辈的教程，欢迎大家去访问他们的博客<a href="https://blog.daliansky.net/" target="_blank" rel="noopener">黑果小兵的部落阁</a>兵叔有很多综合性教程适合小白，各位可以看兵叔的帖子。 <a href="https://blog.xjn819.com/" target="_blank" rel="noopener">Xin’s大佬的blog</a>Xin大佬的教程都是针对OpenCore写的所以想了解OC的朋友推荐看Xin大佬的帖子因为本人比较喜欢使用OpenCore所以下面的教程按照OC的方式安装。</p>
-<h1 id="OpenCore"><a href="#OpenCore" class="headerlink" title="OpenCore"></a>OpenCore</h1><h2 id="什么是OpenCore"><a href="#什么是OpenCore" class="headerlink" title="什么是OpenCore"></a>什么是OpenCore</h2><p>OpenCore<a href="">(简称 OC)</a>是一个着眼于未来开源引导工具, 最初诞生于 HermitCrabs 实验室, 现在接手于 Acidanthera, 其目的是创造一个更加严谨的模组化的轻量引导系统。尽管 OpenCore 的主要用途是黑苹果, 它也支持其它操作系统的引导。</p>
-<p>OpenCore 现在处于公测 Beta 阶段, 引导相关功能也已非常稳定, 喜欢折腾的朋友现在已经是动手的时机了。</p>
-<p>这个教程只能作为你探索的起点。请仔细阅读并时刻牢记你的硬件可能有不同的配置要求。<br><a href="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf" target="_blank" rel="noopener">OC官方文档</a>– OpenCore 最权威的资料, 没有之一!!!</p>
-<h2 id="为什么选择-OpenCore"><a href="#为什么选择-OpenCore" class="headerlink" title="为什么选择 OpenCore?"></a>为什么选择 OpenCore?</h2><p>   1.从 2019 年 9 月以后, <a href="">Acidanthera</a> 开发的内核驱动 (Lilu, AppleALC 等等) 「不再会」 在 Clover 上做兼容性测试<br>   2.OpenCore 更加注重系统的安全性, 提供对 OpenCore 自身引导文件对加密, 同时对文件保险箱 (FileVault) 有更强大的支持, 在未来会支持 UEFI 安全启动<br>   3.OpenCore 启动 FileVault (硬盘保险箱) 加密的分区速度远超 Clover<br>   4.OpenCore 支持基于 [boot.efi] 的原生开机快捷键支持<br>   5.OpenCore 使用更加先进的方法注入第三方内核扩展驱动 (Kext) 且与此同时不会破坏系统完整性保护<br>   6.OpenCore 通过读取启动磁盘设置的 NVRAM 变量, 可以像白苹果一样支持在设置的启动磁盘切换默认引导项<br>   7.支持给其它 .efi 驱动或引导工具加入参数<br>   8.如下 UEFI 驱动被合并入 OpenCore, 未来的开发直接与 OpenCore 绑定, 且不再支持 Clover<br>    AptioMemoryFix<br>    已经被合并入 OpenCore 并将未合并的模组更名为 FwRuntimeVariable.efi, 提供更多可按需求定制 Slide 值计算的 Quirk</p>
-<p>   AppleGenericInput<br>   (原来的 AptioInputFix) 为了提高兼容性和 ALT / Command 键的对调已经合并入 OpenCore 并增加了更多的 Quirk</p>
-<p>   AppleUiSupport<br>   为了提供更好的 FileVault 体验, 已合并入 OpenCore 并增加了更多的 Quirk### Generate static files</p>
-<h2 id="OpenCore-常见疑问"><a href="#OpenCore-常见疑问" class="headerlink" title="OpenCore 常见疑问"></a>OpenCore 常见疑问</h2><h3 id="1-OpenCore-没有精美的主题-以后会添加吗"><a href="#1-OpenCore-没有精美的主题-以后会添加吗" class="headerlink" title="1.OpenCore 没有精美的主题, 以后会添加吗?"></a>1.OpenCore 没有精美的主题, 以后会添加吗?</h3><p>   可能但是短时间内不会有, OpenCore 的开发成员 vit9696 已经声明不会开发官方主题, 但是保留了<br>   GUI 接口, 其他开发者可以自己制作<br>   OpenCore 自带的 GUI 仅用于 debug, 设计初衷是在正常使用的时像白苹果一样隐藏。<br>    其实 OpenCore 已经提供了大量可以绕开 GUI 的功能, 将 <a href="">ShowPicker</a> 设置为 NO<br>    隐藏菜单之后,可以通过系统自带的启动磁盘设置来切换默认系统, 用苹果原生快捷键来重置<br>    NVRAM 和添加引导表示符, 需要其它功能的时候可以随时按 <a href="">ESC/Option</a> 调出,<br>    主题存在的意义不大</p>
-<h3 id="2-OpenCore-为什么不会为其它操作系统忽略-ACPI-补丁"><a href="#2-OpenCore-为什么不会为其它操作系统忽略-ACPI-补丁" class="headerlink" title="2.OpenCore 为什么不会为其它操作系统忽略 ACPI 补丁?"></a>2.OpenCore 为什么不会为其它操作系统忽略 ACPI 补丁?</h3><p>   真正正确的 ACPI (DSDT/SSDT) 应当适用于所有的操作系统, 单独为一个操作系统制作 ACPI<br>   是不合理的, 因此 OpenCore 基于 ACPI 标准, 不会在 ACPI 上区别对待操作系统, (OpenCore<br>   ACPI 教程正在施工中, 敬请期待)</p>
-<h3 id="3-OpenCore-的配置为什么看起来这复杂"><a href="#3-OpenCore-的配置为什么看起来这复杂" class="headerlink" title="3.OpenCore 的配置为什么看起来这复杂?"></a>3.OpenCore 的配置为什么看起来这复杂?</h3><p>  OpenCore 为了提高兼容性, 为用户开放了更多底层的 Quirk<br>  OpenCore 现阶段没有可用的非常直观的 GUI 编辑器</p>
-<p>  <a href="">PS:换位思考, 如果用 Xcode 来编辑 Clover 安装包内自带的 Config 样本, 显然 OpenCore 会更简单<br>  OpenCore 很多功能都有且只有一处设置, 但是 Clover 有大量等效组合互相干扰</a></p>
-<pre><code>                         更新2020年2月28日</code></pre><script>
+                <h2 id="开学有感"><a href="#开学有感" class="headerlink" title="开学有感"></a>开学有感</h2><p>  今天是6.1日国际儿童节，特殊的假期已经过去，我们再次相聚校园一起学习，短短的一个月的时间我们要学习新知识，还要复习以前学习过的知识，这对我们和老师都是一个极大的考验，正如今天早晨校门口的车票起点：抗疫有我 延期起航 成长不停歇 终点站：奋斗有我 笃定前行 蓄力再出发 意思是在跟疫情作斗争的时候有我们，同时我们原本开学在2月17日调整到了6月1日，大约这个假期有140天左右了。这个假期是不是大部分同学都在每日“Timi” “大吉大利，今晚吃鸡”中度过？（其实我大概也是）但是时间不会自己回来，我们还可以再追回一点时间，用一个月把所有的新知识巩固复习。争取在告别母校升到初中的时候可以取得让自己满意的成绩，分到一个不错的班级着这也应了后半句话 奋斗有我 笃定前行 蓄力再出发<br>        鉴于我们每次创造的奇迹我相信我们应该可以做到吧<span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f436.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f436.png?v8">🐶</span></p>
+<h2 id="复学第一课视频观看"><a href="#复学第一课视频观看" class="headerlink" title="复学第一课视频观看"></a>复学第一课视频观看</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":"yes","screenshot":"yes","video":{"url":"/video/61.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script> 
+
+<h2 id="课程表"><a href="#课程表" class="headerlink" title="课程表"></a>课程表</h2><table>
+<thead>
+<tr>
+<th align="center">节次/时间</th>
+<th align="center">周一</th>
+<th align="center">周二</th>
+<th align="center">周三</th>
+<th align="center">周四</th>
+<th align="center">周五</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">语文</td>
+<td align="center">数学</td>
+<td align="center">语文</td>
+<td align="center">数学</td>
+<td align="center">语文</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">数学</td>
+<td align="center">语文</td>
+<td align="center">数学</td>
+<td align="center">语文</td>
+<td align="center">数学</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">英语</td>
+<td align="center">道法</td>
+<td align="center">数学</td>
+<td align="center">语文</td>
+<td align="center">科学</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">语文</td>
+<td align="center">英语</td>
+<td align="center">语文</td>
+<td align="center">道法</td>
+<td align="center">英语</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">音乐</td>
+<td align="center">美术</td>
+<td align="center">体育</td>
+<td align="center">英语</td>
+<td align="center">语文</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">班会</td>
+<td align="center">科学</td>
+<td align="center">道法</td>
+<td align="center">实践</td>
+<td align="center">体育</td>
+</tr>
+</tbody></table>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -556,7 +625,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.xiaolegun.cn/2020/02/28/opencore/">https://blog.xiaolegun.cn/2020/02/28/opencore/</a>
+                    <a href="https://blog.xiaolegun.cn/kai-xue-you-gan.html">https://blog.xiaolegun.cn/kai-xue-you-gan.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -593,7 +662,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%96%AB%E6%83%85/">
+                                    <span class="chip bg-color">疫情</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%BC%80%E5%AD%A6/">
+                                    <span class="chip bg-color">开学</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -762,7 +839,7 @@
         repo: 'comment-repo',
         owner: 'xiaoleGun',
         admin: "xiaoleGun",
-        id: '2020-02-28T15-02-24',
+        id: '2020-06-01T20-35-18',
         language: 'zh-CN',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
@@ -787,36 +864,54 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/02/bu-yong-shua-bios-lai-jie-suo-msr-cfg/">
+                <a href="/kai-xue-you-gan.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="不用刷BIOS来解锁MSR（CFG）">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="开学有感">
                         
-                        <span class="card-title">不用刷BIOS来解锁MSR（CFG）</span>
+                        <span class="card-title">开学有感</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            今天我们来学习不刷BIOS来解锁MSR(CFG)锁，本不想写这篇文章但没啥事干还是写了，而且云屋小站的那篇文章，有可能大部分人看不懂，我尽量把这个教程写的清楚明白一点让各位看的比较爽，但配图我还是借用云屋小站的配图，感谢了！！！下面我们开始
+                            开学有感  今天是6.1日国际儿童节，特殊的假期已经过去，我们再次相聚校园一起学习，短短的一个月的时间我们要学习新知识，还要复习以前学习过的知识，这对我们和老师都是一个极大的考验，正如今天早晨校门口的车票起点：抗疫有我 延期起航 成长不停歇
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-01
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            xiaoleGun
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BC%80%E5%AD%A6%E6%9C%89%E6%84%9F/" class="post-category">
+                                    开学有感
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%96%AB%E6%83%85/">
+                        <span class="chip bg-color">疫情</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BC%80%E5%AD%A6/">
+                        <span class="chip bg-color">开学</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -828,32 +923,44 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/28/huan-ying-lai-dao-xiaolegun-de-bo-luo-ge/">
+                <a href="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="欢迎来到xiaoleGun&#39;Blog">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Mac平台搭建属于自己的博客-HEXO">
                         
-                        <span class="card-title">欢迎来到xiaoleGun&#39;Blog</span>
+                        <span class="card-title">Mac平台搭建属于自己的博客-HEXO</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            欢迎大家来到我的博客,你们在这里会学到很多关于黑苹果的知识。我的博客有很多借鉴前辈的教程，欢迎大家去访问他们的博客黑果小兵的部落阁兵叔有很多综合性教程适合小白，各位可以看兵叔的帖子。 Xin’s大佬的blogXin大佬的教程都是针对Open
+                            前言我搭建博客有一段时间了，看到身边的人都想搭建一个属于自己的博客但是不会弄，我就把自己遇到的一些大坑总结并放上详细的步骤。声明：我只会发布Mac平台的搭建教程至于Win不会的，因为我身边都是黑苹果用户，而且我也是其中之一。工具所需要的工具
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            xiaoleGun
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                    Hexo博客
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">Hexo博客</span>
+                    </a>
+                    
                 </div>
                 
             </div>
