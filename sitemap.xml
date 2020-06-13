@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.xiaolegun.cn/about/index.html</loc>
+    
+    <lastmod>2020-06-13T12:56:54.010Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.xiaolegun.cn/kai-xue-you-gan.html</loc>
     
     <lastmod>2020-06-12T13:43:18.806Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://blog.xiaolegun.cn/contact/index.html</loc>
     
     <lastmod>2020-05-03T06:36:07.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.xiaolegun.cn/about/index.html</loc>
-    
-    <lastmod>2020-05-03T06:35:13.000Z</lastmod>
     
   </url>
   
