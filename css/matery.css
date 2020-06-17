@@ -1,19 +1,8 @@
-
 /*全局基础样式*/
 /*小屏幕下(手机类)的样式*/
 @media only screen and (max-width: 601px) {
     .container {
         width: 95%;
-    }
-    header .brand-logo .logo-span {
-        font-size: 1rem;
-    }
-    .bg-cover .title {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1.85em;
-        margin-bottom: 20px;
-        position: relative;
     }
 }
 
@@ -22,40 +11,25 @@
     .container {
         width: 90%;
     }
-    header .brand-logo .logo-span {
-        font-size: 2rem;
-    }
-    .bg-cover .title {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1.85em;
-        margin-bottom: 20px;
-        position: relative;
-    }
 }
+
 /*大屏幕下(桌面类)的样式*/
 @media only screen and (min-width: 993px) {
     .container {
-        width: 85%;
+        width: 90%;
         max-width: 1125px;
+    }
+
+    .head-container {
+        position: absolute;
+        padding: 0px 30px;
+        width: 100%;
     }
 
     .post-container {
         width: 90%;
         margin: 0 auto;
         max-width: 1250px;
-    }
-
-    header .brand-logo .logo-span {
-        font-size: 2rem;
-    }
-
-    .bg-cover .title {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1.85em;
-        margin-bottom: 20px;
-        position: relative;
     }
 }
 
@@ -292,7 +266,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #171717 0%, #171717 100%);
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
 }
 
 .text-color {
@@ -347,7 +321,7 @@ header .brand-logo .logo-img {
 }
 
 header .brand-logo .logo-span {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
@@ -626,8 +600,8 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 2.5rem;
-    line-height: 1.2em;
+    font-size: 4rem;
+    line-height: 1.85em;
     margin-bottom: 20px;
     position: relative;
 }

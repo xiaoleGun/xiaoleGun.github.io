@@ -74,11 +74,22 @@
   
   <li class="hide-on-med-and-down nav-item">
     
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
     <a href="/archives" class="waves-effect waves-light">
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
-      <span>时间轴</span>
+      <span>归档</span>
     </a>
     
   </li>
@@ -89,7 +100,18 @@
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
-      <span>关于我</span>
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
     </a>
     
   </li>
@@ -100,18 +122,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>友链</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/pan" class="waves-effect waves-light">
-      
-      <i class="fas fa-cloud" style="zoom: 0.6;"></i>
-      
-      <span>每周必看</span>
+      <span>友情链接</span>
     </a>
     
   </li>
@@ -166,11 +177,22 @@
         
         <li class="m-nav-item">
 	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
 		<a href="/archives" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
-			时间轴
+			归档
 		</a>
           
         </li>
@@ -181,7 +203,18 @@
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
-			关于我
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
 		</a>
           
         </li>
@@ -192,18 +225,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			友链
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/pan" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-cloud"></i>
-			
-			每周必看
+			友情链接
 		</a>
           
         </li>
@@ -211,7 +233,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/xiaolegun" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -238,7 +260,7 @@
     }
 
     .github-corner svg {
-        color: #171717;
+        color: #0f9d58;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -268,7 +290,7 @@
     }
 </style>
 
-<a href="https://github.com/xiaolegun" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -278,7 +300,6 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
-
         
     </nav>
 
@@ -427,32 +448,12 @@
                 
 
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-04
-                </div>
+
                 
 
                 
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
-                </div>
-                
 
                 
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
-                </div>
-                
-
-                
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -460,37 +461,19 @@
             <div id="articleContent">
                 <p>今天我们来学习不刷BIOS来解锁MSR(CFG)锁，本不想写这篇文章但没啥事干还是写了，而且云屋小站的那篇文章，有可能大部分人看不懂，我尽量把这个教程写的清楚明白一点让各位看的比较爽，但配图我还是借用<a href="https://www.misonsky.cn/115.html" target="_blank" rel="noopener">云屋小站</a>的配图，感谢了！！！下面我们开始我们的教程吧！！！</p>
 <p>我们需要提取BIOS，DELL用户请往下看部分机型BIOS是EXE格式的也需要往下看，如果是BIN或ROM格式的你就跳过吧!(PS:部分的AMI的BIOS可以提取BIOS，可以自己确定。)我下面先讲DELL机型的<br>。</p>
-<p>(注意以下操作在Windows进行)首先进入<a href="https://www.dell.com/support/home/cn/zh/cnbsd1?app=products&amp;~ck=mn" target="_blank" rel="noopener">DELL官网</a>搜索自己的机型并下载EXE文件的BIOS，然后在任意盘符创建一个文件夹，并取名叫做1把EXE格式的BIOS放到这个文件夹并把这个BIOS取名叫做1，然后打开CMD以管理员来运行，输入D:/进入D盘根据你的盘符来选择，之后CD 1进入文件夹，然后在输入1 –writeromfile之后你会发现在1的文件夹中多出一个ROM格式的文件这个就是我们的BIOS了，接下来你们可以跳过了，我要讲解AMI的方法了！！！</p>
-<p>首先在win下载一个软件Universal BIOS Backup ToolKit 2.0.exe<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/Universal+BIOS+Backup+ToolKit+2.0.exe" target="_blank" rel="noopener">点我下载</a>下载之后直接提取就ok了<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/1.jpg" alt=""><br>然后你们也会得到一个rom格式的文件。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/2.jpg" alt=""></p>
+<p>(注意以下操作在Windows进行)首先进入<a href="https://www.dell.com/support/home/cn/zh/cnbsd1?app=products&~ck=mn" target="_blank" rel="noopener">DELL官网</a>搜索自己的机型并下载EXE文件的BIOS，然后在任意盘符创建一个文件夹，并取名叫做1把EXE格式的BIOS放到这个文件夹并把这个BIOS取名叫做1，然后打开CMD以管理员来运行，输入D:/进入D盘根据你的盘符来选择，之后CD 1进入文件夹，然后在输入1 –writeromfile之后你会发现在1的文件夹中多出一个ROM格式的文件这个就是我们的BIOS了，接下来你们可以跳过了，我要讲解AMI的方法了！！！</p>
+<p>首先在win下载一个软件Universal BIOS Backup ToolKit 2.0.exe<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/Universal+BIOS+Backup+ToolKit+2.0.exe" target="_blank" rel="noopener">点我下载</a>下载之后直接提取就ok了<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/1.jpg" alt><br>然后你们也会得到一个rom格式的文件。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/2.jpg" alt></p>
 <p>接下来所有人看这里！！！我们现在需要下载一个软件，此软件是UEFITool工具它可以读取BIOS此软件有win、mac、Linux版本，这里我以mac版进行演示，mac版<a href="https://github.com/LongSoft/UEFITool" target="_blank" rel="noopener">点我下载</a></p>
-<p>打开UEFITool软件，菜单栏选择File&gt;Open image file…<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/3.jpg" alt=""><br>选择你的rom格式的bios文件或bin格式然后会出现以下界面<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/4.jpg" alt="">同时按下alt+F（我这里是PS2键盘，如果你是USB键盘，那就按Win+F）打开搜索框，选择Text，输入CFG Lock，点OK。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/5.jpg" alt=""><br>得到如下信息<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/6.jpg" alt="">双击这条信息，软件会自动定位到含有CFG Lock信息的模块。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/7.jpg" alt=""><br>右键该模块，选择extractbody，提取出该模块。<br><img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/8.png" alt=""> <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/9.jpg" alt=""><br>接下来，我们需要把该模块转换成我们能读懂的信息。我们需要借助ifrextract这个工具。官网点我打开，<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/ifrextract_v0.3.6.osx.zip" target="_blank" rel="noopener">点我下载</a>。把上面提取出来的模块更名为1.bin（为了方便操作），把ifrextract文件放到桌面上。打开终端，依次执行以下操作：cd ~/desktop 进入桌面这个目录。转换信息 ./ifrextract 1.bin 1.txt <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/10.jpg" alt=""><br>这样，我们会看到桌面上生成了一个叫1.txt的文件，里面就是转换出来的我们能读懂的BIOS模块信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/11.jpg" alt=""></p>
-<h2 id="寻找需要的偏移量"><a href="#寻找需要的偏移量" class="headerlink" title="寻找需要的偏移量"></a>寻找需要的偏移量</h2><p>打开上一步转换出来的1.txt文件，同时按下alt+F（这是ps2键盘的，USB键盘使用Win+F），输入我们想要修改的东西名称进行查找。例如，我们想要解锁MSR 0xE2，那就输入CFG Lock进行搜索<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/12.jpg" alt="">提取整理出有用的信息：</p>
+<p>打开UEFITool软件，菜单栏选择File&gt;Open image file…<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/3.jpg" alt><br>选择你的rom格式的bios文件或bin格式然后会出现以下界面<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/4.jpg" alt>同时按下alt+F（我这里是PS2键盘，如果你是USB键盘，那就按Win+F）打开搜索框，选择Text，输入CFG Lock，点OK。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/5.jpg" alt><br>得到如下信息<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/6.jpg" alt>双击这条信息，软件会自动定位到含有CFG Lock信息的模块。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/7.jpg" alt><br>右键该模块，选择extractbody，提取出该模块。<br><img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/8.png" alt> <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/9.jpg" alt><br>接下来，我们需要把该模块转换成我们能读懂的信息。我们需要借助ifrextract这个工具。官网点我打开，<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/ifrextract_v0.3.6.osx.zip" target="_blank" rel="noopener">点我下载</a>。把上面提取出来的模块更名为1.bin（为了方便操作），把ifrextract文件放到桌面上。打开终端，依次执行以下操作：cd ~/desktop 进入桌面这个目录。转换信息 ./ifrextract 1.bin 1.txt <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/10.jpg" alt><br>这样，我们会看到桌面上生成了一个叫1.txt的文件，里面就是转换出来的我们能读懂的BIOS模块信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/11.jpg" alt></p>
+<h2 id="寻找需要的偏移量"><a href="#寻找需要的偏移量" class="headerlink" title="寻找需要的偏移量"></a>寻找需要的偏移量</h2><p>打开上一步转换出来的1.txt文件，同时按下alt+F（这是ps2键盘的，USB键盘使用Win+F），输入我们想要修改的东西名称进行查找。例如，我们想要解锁MSR 0xE2，那就输入CFG Lock进行搜索<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/12.jpg" alt>提取整理出有用的信息：</p>
 <p>One Of: CFG lock, VarStoreInfo(VarOffset/VarName): 0x62, VarStore: 0x1<br>One Of Option: Disabled, Value (8 bit): 0x0<br>One Of Option: Enabled, Value (8 bit): 0x1</p>
 <p>其中，VarStoreInfo值以及Option中的Value值就是我们要找的。VarStoreInfo值是CFG Lock这个选项的地址，也可以说其在BIOS中的偏移量。后面的VarStore是当前值（BIOS默认值），为0x1      0x1对应下面的Option里就是Enabled，意思就是CFGLock这个选择默认被打开了，也就是说MSR 0xE2默认被锁定了。而我们想要解锁它就需要把该选择修改成0x0的Disabled，就是要把0x62这个地址上的数值修改为0x0</p>
 <h2 id="修改BIOS隐藏设置"><a href="#修改BIOS隐藏设置" class="headerlink" title="修改BIOS隐藏设置"></a>修改BIOS隐藏设置</h2><p>要修改BIOS隐藏设置，我们需要在UEFI shell里使用setup_var命令。datasone修改了一份支持setup_var命令的grub引导，我们可以借助这个工具。项目<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/modGRUBShell.efi" target="_blank" rel="noopener">点我下载</a>使用磁盘工具，把U盘抹掉，方案用主引导记录，格式选择MS-DOS（FAT）然后在U盘分区里新建一个EFI文件夹，EFI文件夹里新建一个BOOT文件夹，把下载的modGRUBShell.efi更名为BOOTX64.efi，放入BOOT文件夹里面。就这样，一个支持setup_var命令的grub引导启动盘就制作完成了。进BIOS里设置第一启动项为U盘（UEFI模式启动）。启动grub后，我们可以开始使用setup_var命令了。</p>
-<p>我们开始来解锁MSR 0xE2输入:<br>setup_var_3 0x62<br>该命令是查询0x62这个地址（偏移量）的数值，0x62是我们在上面一步中查找到的CFG-Lock选项的地址，从下图中我们可以看到该0x62地址数值为0x01，即对应Enabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/13.jpg" alt=""><br>输入:<br>setup_var_3 0x62 0x00<br>该命令是修改0x62这个地址的数值为0x00，也就是把CFG-Lock这个选项设置为Disabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/14.jpg" alt=""></p>
+<p>我们开始来解锁MSR 0xE2输入:<br>setup_var_3 0x62<br>该命令是查询0x62这个地址（偏移量）的数值，0x62是我们在上面一步中查找到的CFG-Lock选项的地址，从下图中我们可以看到该0x62地址数值为0x01，即对应Enabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/13.jpg" alt><br>输入:<br>setup_var_3 0x62 0x00<br>该命令是修改0x62这个地址的数值为0x00，也就是把CFG-Lock这个选项设置为Disabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/14.jpg" alt></p>
 <p>每一个BIOS的设置选项地址（偏移量）都是不一样的，不检查BIOS设置地址而直接使用setup_var命令修改是十分危险的事情！！！！！！！！！！！！！！！！！一点要注意！！！！</p>
-<h2 id="验证结果"><a href="#验证结果" class="headerlink" title="验证结果"></a>验证结果</h2><p>setup_var命令执行完毕后，我们怎么知道命令是否生效了呢？<br>其实不难，只要使用一些辅助软件看一下即可。<br>例如，CFG-Lock这个选项，我们可以在Mac里使用AppleIntelInfo驱动打印CPU相关状态信息，Hackintool工具已经集成了该驱动，所以我们可以很方便地获取相关信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/15.jpg" alt=""><br>由上图可知，CFG-Lock已经成功解锁了。那么，你就可以删掉KernelPM补丁（Haswell+）或AppleIntelCPUPM（Haswell以前的）补丁，直接使用原生电源管理了。（Tips：用以防止开启HWP后奔溃的MSR_0xE2__xcpm_idle_instant_reboot内核补丁也不再需要了哦！）</p>
+<h2 id="验证结果"><a href="#验证结果" class="headerlink" title="验证结果"></a>验证结果</h2><p>setup_var命令执行完毕后，我们怎么知道命令是否生效了呢？<br>其实不难，只要使用一些辅助软件看一下即可。<br>例如，CFG-Lock这个选项，我们可以在Mac里使用AppleIntelInfo驱动打印CPU相关状态信息，Hackintool工具已经集成了该驱动，所以我们可以很方便地获取相关信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/15.jpg" alt><br>由上图可知，CFG-Lock已经成功解锁了。那么，你就可以删掉KernelPM补丁（Haswell+）或AppleIntelCPUPM（Haswell以前的）补丁，直接使用原生电源管理了。（Tips：用以防止开启HWP后奔溃的MSR_0xE2__xcpm_idle_instant_reboot内核补丁也不再需要了哦！）</p>
 <p>各位朋友们到了这一步我们的MSR（CFG）就已经解锁成功了！！！大家以后可以抛弃一些补丁了！！我制作的镜像马上就会发布在我的博客上！希望大家多多的支持并鼓励我！！拜拜！</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -672,7 +655,7 @@
     <div id="rewardModal" class="modal">
         <div class="modal-content">
             <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的心意，我的动力</h4>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
             <div class="reward-content">
                 <div class="reward-tabs">
                     <ul class="tabs row">
@@ -680,10 +663,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechatpay.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -700,34 +683,6 @@
             
         </div>
     </div>
-
-    
-        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '7a518588ebcbd5598fa9',
-        clientSecret: '1c3f5cd16c3e7c47bcf353d9d2440556baaa8624',
-        repo: 'comment-repo',
-        owner: 'xiaoleGun',
-        admin: "xiaoleGun",
-        id: '2020-03-02T00-00-00',
-        language: 'zh-CN',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
 
     
 
@@ -836,43 +791,6 @@
 </div>
 
 
-<script>
-    $('#articleContent').on('copy', function (e) {
-        // IE8 or earlier browser is 'undefined'
-        if (typeof window.getSelection === 'undefined') return;
-
-        var selection = window.getSelection();
-        // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('30')) {
-            return;
-        }
-
-        // create a div outside of the visible area and fill it with the selected text.
-        var bodyElement = document.getElementsByTagName('body')[0];
-        var newdiv = document.createElement('div');
-        newdiv.style.position = 'absolute';
-        newdiv.style.left = '-99999px';
-        bodyElement.appendChild(newdiv);
-        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-
-        // we need a <pre> tag workaround.
-        // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-        }
-
-        var url = document.location.href;
-        newdiv.innerHTML += '<br />'
-            + '来源: xiaoleGun<br />'
-            + '文章作者: xiaoleGun<br />'
-            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
-
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-    });
-</script>
-
 
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
@@ -893,6 +811,10 @@
 
 
 <!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
 
 
     </div>
@@ -1002,12 +924,16 @@
 <style>
     .aplayer .aplayer-lrc p {
         
+        display: none;
+        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1030,14 +956,14 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="2898635365"
+                   id="503838841"
                    fixed='true'
-                   autoplay='true'
+                   autoplay='false'
                    theme='#42b983'
                    loop='all'
-                   order='list'
+                   order='random'
                    preload='auto'
-                   volume='0.1'
+                   volume='0.7'
                    list-folded='true'
         >
         </meting-js>
@@ -1048,17 +974,14 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 15px !important;">
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">2020</span>
+            <span id="year">2019</span>
             <a href="/about" target="_blank">xiaoleGun</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
-            
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.8k</span>&nbsp;字
             
             
             
@@ -1078,65 +1001,17 @@
             
             <br>
             
-            <span id="sitetime">载入运行时间...</span>
-            <script>
-                function siteTime() {
-                    var seconds = 1000;
-                    var minutes = seconds * 60;
-                    var hours = minutes * 60;
-                    var days = hours * 24;
-                    var years = days * 365;
-                    var today = new Date();
-                    var startYear = "2020";
-                    var startMonth = "2";
-                    var startDate = "29";
-                    var startHour = "5";
-                    var startMinute = "20";
-                    var startSecond = "20";
-                    var todayYear = today.getFullYear();
-                    var todayMonth = today.getMonth() + 1;
-                    var todayDate = today.getDate();
-                    var todayHour = today.getHours();
-                    var todayMinute = today.getMinutes();
-                    var todaySecond = today.getSeconds();
-                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                    var diff = t2 - t1;
-                    var diffYears = Math.floor(diff / years);
-                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-                        minutes);
-                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-                        diffMinutes * minutes) / seconds);
-                    if (startYear == todayYear) {
-                        document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    } else {
-                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    }
-                }
-                setInterval(siteTime, 1000);
-            </script>
-            
             <br>
-            
-            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
-                <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备20017167号-1</a>
-            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/xiaolegun" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1592501605@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1146,15 +1021,11 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1592501605" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1592501605" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
 
-
-    <a href="https://weibo.com/6184280309" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/6184280309" data-position="top" data-delay="50">
-        <i class="fab fa-weibo"></i>
-    </a>
 
 
 
@@ -1236,10 +1107,6 @@ $(function () {
 
     
 
-    
-    
-    <script type="text/javascript" size="150" alpha='0.6'
-        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
     
 
     
