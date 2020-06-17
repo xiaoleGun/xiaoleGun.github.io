@@ -443,7 +443,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -459,17 +459,35 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>欢迎大家来到我的博客,你们在这里会学到很多关于黑苹果的知识。我的博客有很多借鉴前辈的教程，欢迎大家去访问他们的博客<a href="https://blog.daliansky.net/" target="_blank" rel="noopener">黑果小兵的部落阁</a>兵叔有很多综合性教程适合小白，各位可以看兵叔的帖子。 <a href="https://blog.xjn819.com/" target="_blank" rel="noopener">Xin’s大佬的blog</a>Xin大佬的教程都是针对OpenCore写的所以想了解OC的朋友推荐看Xin大佬的帖子因为本人比较喜欢使用OpenCore所以下面的教程按照OC的方式安装。</p>
-<h1 id="OpenCore"><a href="#OpenCore" class="headerlink" title="OpenCore"></a>OpenCore</h1><h2 id="什么是OpenCore"><a href="#什么是OpenCore" class="headerlink" title="什么是OpenCore"></a>什么是OpenCore</h2><p>OpenCore<a href>(简称 OC)</a>是一个着眼于未来开源引导工具, 最初诞生于 HermitCrabs 实验室, 现在接手于 Acidanthera, 其目的是创造一个更加严谨的模组化的轻量引导系统。尽管 OpenCore 的主要用途是黑苹果, 它也支持其它操作系统的引导。</p>
+<h1 id="OpenCore"><a href="#OpenCore" class="headerlink" title="OpenCore"></a>OpenCore</h1><h2 id="什么是OpenCore"><a href="#什么是OpenCore" class="headerlink" title="什么是OpenCore"></a>什么是OpenCore</h2><p>OpenCore<a href="">(简称 OC)</a>是一个着眼于未来开源引导工具, 最初诞生于 HermitCrabs 实验室, 现在接手于 Acidanthera, 其目的是创造一个更加严谨的模组化的轻量引导系统。尽管 OpenCore 的主要用途是黑苹果, 它也支持其它操作系统的引导。</p>
 <p>OpenCore 现在处于公测 Beta 阶段, 引导相关功能也已非常稳定, 喜欢折腾的朋友现在已经是动手的时机了。</p>
 <p>这个教程只能作为你探索的起点。请仔细阅读并时刻牢记你的硬件可能有不同的配置要求。<br><a href="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf" target="_blank" rel="noopener">OC官方文档</a>– OpenCore 最权威的资料, 没有之一!!!</p>
-<h2 id="为什么选择-OpenCore"><a href="#为什么选择-OpenCore" class="headerlink" title="为什么选择 OpenCore?"></a>为什么选择 OpenCore?</h2><p>   1.从 2019 年 9 月以后, <a href>Acidanthera</a> 开发的内核驱动 (Lilu, AppleALC 等等) 「不再会」 在 Clover 上做兼容性测试<br>   2.OpenCore 更加注重系统的安全性, 提供对 OpenCore 自身引导文件对加密, 同时对文件保险箱 (FileVault) 有更强大的支持, 在未来会支持 UEFI 安全启动<br>   3.OpenCore 启动 FileVault (硬盘保险箱) 加密的分区速度远超 Clover<br>   4.OpenCore 支持基于 [boot.efi] 的原生开机快捷键支持<br>   5.OpenCore 使用更加先进的方法注入第三方内核扩展驱动 (Kext) 且与此同时不会破坏系统完整性保护<br>   6.OpenCore 通过读取启动磁盘设置的 NVRAM 变量, 可以像白苹果一样支持在设置的启动磁盘切换默认引导项<br>   7.支持给其它 .efi 驱动或引导工具加入参数<br>   8.如下 UEFI 驱动被合并入 OpenCore, 未来的开发直接与 OpenCore 绑定, 且不再支持 Clover<br>    AptioMemoryFix<br>    已经被合并入 OpenCore 并将未合并的模组更名为 FwRuntimeVariable.efi, 提供更多可按需求定制 Slide 值计算的 Quirk</p>
+<h2 id="为什么选择-OpenCore"><a href="#为什么选择-OpenCore" class="headerlink" title="为什么选择 OpenCore?"></a>为什么选择 OpenCore?</h2><p>   1.从 2019 年 9 月以后, <a href="">Acidanthera</a> 开发的内核驱动 (Lilu, AppleALC 等等) 「不再会」 在 Clover 上做兼容性测试<br>   2.OpenCore 更加注重系统的安全性, 提供对 OpenCore 自身引导文件对加密, 同时对文件保险箱 (FileVault) 有更强大的支持, 在未来会支持 UEFI 安全启动<br>   3.OpenCore 启动 FileVault (硬盘保险箱) 加密的分区速度远超 Clover<br>   4.OpenCore 支持基于 [boot.efi] 的原生开机快捷键支持<br>   5.OpenCore 使用更加先进的方法注入第三方内核扩展驱动 (Kext) 且与此同时不会破坏系统完整性保护<br>   6.OpenCore 通过读取启动磁盘设置的 NVRAM 变量, 可以像白苹果一样支持在设置的启动磁盘切换默认引导项<br>   7.支持给其它 .efi 驱动或引导工具加入参数<br>   8.如下 UEFI 驱动被合并入 OpenCore, 未来的开发直接与 OpenCore 绑定, 且不再支持 Clover<br>    AptioMemoryFix<br>    已经被合并入 OpenCore 并将未合并的模组更名为 FwRuntimeVariable.efi, 提供更多可按需求定制 Slide 值计算的 Quirk</p>
 <p>   AppleGenericInput<br>   (原来的 AptioInputFix) 为了提高兼容性和 ALT / Command 键的对调已经合并入 OpenCore 并增加了更多的 Quirk</p>
 <p>   AppleUiSupport<br>   为了提供更好的 FileVault 体验, 已合并入 OpenCore 并增加了更多的 Quirk### Generate static files</p>
-<h2 id="OpenCore-常见疑问"><a href="#OpenCore-常见疑问" class="headerlink" title="OpenCore 常见疑问"></a>OpenCore 常见疑问</h2><h3 id="1-OpenCore-没有精美的主题-以后会添加吗"><a href="#1-OpenCore-没有精美的主题-以后会添加吗" class="headerlink" title="1.OpenCore 没有精美的主题, 以后会添加吗?"></a>1.OpenCore 没有精美的主题, 以后会添加吗?</h3><p>   可能但是短时间内不会有, OpenCore 的开发成员 vit9696 已经声明不会开发官方主题, 但是保留了<br>   GUI 接口, 其他开发者可以自己制作<br>   OpenCore 自带的 GUI 仅用于 debug, 设计初衷是在正常使用的时像白苹果一样隐藏。<br>    其实 OpenCore 已经提供了大量可以绕开 GUI 的功能, 将 <a href>ShowPicker</a> 设置为 NO<br>    隐藏菜单之后,可以通过系统自带的启动磁盘设置来切换默认系统, 用苹果原生快捷键来重置<br>    NVRAM 和添加引导表示符, 需要其它功能的时候可以随时按 <a href>ESC/Option</a> 调出,<br>    主题存在的意义不大</p>
+<h2 id="OpenCore-常见疑问"><a href="#OpenCore-常见疑问" class="headerlink" title="OpenCore 常见疑问"></a>OpenCore 常见疑问</h2><h3 id="1-OpenCore-没有精美的主题-以后会添加吗"><a href="#1-OpenCore-没有精美的主题-以后会添加吗" class="headerlink" title="1.OpenCore 没有精美的主题, 以后会添加吗?"></a>1.OpenCore 没有精美的主题, 以后会添加吗?</h3><p>   可能但是短时间内不会有, OpenCore 的开发成员 vit9696 已经声明不会开发官方主题, 但是保留了<br>   GUI 接口, 其他开发者可以自己制作<br>   OpenCore 自带的 GUI 仅用于 debug, 设计初衷是在正常使用的时像白苹果一样隐藏。<br>    其实 OpenCore 已经提供了大量可以绕开 GUI 的功能, 将 <a href="">ShowPicker</a> 设置为 NO<br>    隐藏菜单之后,可以通过系统自带的启动磁盘设置来切换默认系统, 用苹果原生快捷键来重置<br>    NVRAM 和添加引导表示符, 需要其它功能的时候可以随时按 <a href="">ESC/Option</a> 调出,<br>    主题存在的意义不大</p>
 <h3 id="2-OpenCore-为什么不会为其它操作系统忽略-ACPI-补丁"><a href="#2-OpenCore-为什么不会为其它操作系统忽略-ACPI-补丁" class="headerlink" title="2.OpenCore 为什么不会为其它操作系统忽略 ACPI 补丁?"></a>2.OpenCore 为什么不会为其它操作系统忽略 ACPI 补丁?</h3><p>   真正正确的 ACPI (DSDT/SSDT) 应当适用于所有的操作系统, 单独为一个操作系统制作 ACPI<br>   是不合理的, 因此 OpenCore 基于 ACPI 标准, 不会在 ACPI 上区别对待操作系统, (OpenCore<br>   ACPI 教程正在施工中, 敬请期待)</p>
 <h3 id="3-OpenCore-的配置为什么看起来这复杂"><a href="#3-OpenCore-的配置为什么看起来这复杂" class="headerlink" title="3.OpenCore 的配置为什么看起来这复杂?"></a>3.OpenCore 的配置为什么看起来这复杂?</h3><p>  OpenCore 为了提高兼容性, 为用户开放了更多底层的 Quirk<br>  OpenCore 现阶段没有可用的非常直观的 GUI 编辑器</p>
-<p>  <a href>PS:换位思考, 如果用 Xcode 来编辑 Clover 安装包内自带的 Config 样本, 显然 OpenCore 会更简单<br>  OpenCore 很多功能都有且只有一处设置, 但是 Clover 有大量等效组合互相干扰</a></p>
-<pre><code>                         更新2020年2月28日</code></pre>
+<p>  <a href="">PS:换位思考, 如果用 Xcode 来编辑 Clover 安装包内自带的 Config 样本, 显然 OpenCore 会更简单<br>  OpenCore 很多功能都有且只有一处设置, 但是 Clover 有大量等效组合互相干扰</a></p>
+<pre><code>                         更新2020年2月28日</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1019,7 +1037,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.5k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             

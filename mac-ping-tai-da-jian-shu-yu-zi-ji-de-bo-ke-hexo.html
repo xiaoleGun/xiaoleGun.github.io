@@ -449,14 +449,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7.7k
+                    7.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    29 分
+                    30 分
                 </div>
                 
 
@@ -472,14 +472,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h3 id="我搭建博客有一段时间了，看到身边的人都想搭建一个属于自己的博客但是不会弄，我就把自己遇到的一些大坑总结并放上详细的步骤。声明：我只会发布Mac平台的搭建教程至于Win不会的，因为我身边都是黑苹果用户，而且我也是其中之一。"><a href="#我搭建博客有一段时间了，看到身边的人都想搭建一个属于自己的博客但是不会弄，我就把自己遇到的一些大坑总结并放上详细的步骤。声明：我只会发布Mac平台的搭建教程至于Win不会的，因为我身边都是黑苹果用户，而且我也是其中之一。" class="headerlink" title="我搭建博客有一段时间了，看到身边的人都想搭建一个属于自己的博客但是不会弄，我就把自己遇到的一些大坑总结并放上详细的步骤。声明：我只会发布Mac平台的搭建教程至于Win不会的，因为我身边都是黑苹果用户，而且我也是其中之一。"></a>我搭建博客有一段时间了，看到身边的人都想搭建一个属于自己的博客但是不会弄，我就把自己遇到的一些大坑总结并放上详细的步骤。声明：我只会发布Mac平台的搭建教程至于Win不会的，因为我身边都是黑苹果用户，而且我也是其中之一。</h3><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><h2 id="所需要的工具并不多但是很繁琐而且还需要你去下载等待，最差的情况还有可能需要番茄，所需工具有Git-重点就是这个mac上没有单独的Git-Ui-而这个工具还正好集成在Xcode里-这时有人想说Brew不香吗直接用它安装Git不好吗，我只想说，呵呵，这货安装也要Git这不就是造轮子吗，对不对，综上所述直接安装Xcode-、安装node-js没有？没有的话点我下载最新版这就是我们需要的所有工具了，接下来开始更为详细的步骤。"><a href="#所需要的工具并不多但是很繁琐而且还需要你去下载等待，最差的情况还有可能需要番茄，所需工具有Git-重点就是这个mac上没有单独的Git-Ui-而这个工具还正好集成在Xcode里-这时有人想说Brew不香吗直接用它安装Git不好吗，我只想说，呵呵，这货安装也要Git这不就是造轮子吗，对不对，综上所述直接安装Xcode-、安装node-js没有？没有的话点我下载最新版这就是我们需要的所有工具了，接下来开始更为详细的步骤。" class="headerlink" title="所需要的工具并不多但是很繁琐而且还需要你去下载等待，最差的情况还有可能需要番茄，所需工具有Git(重点就是这个mac上没有单独的Git Ui,而这个工具还正好集成在Xcode里,这时有人想说Brew不香吗直接用它安装Git不好吗，我只想说，呵呵，这货安装也要Git这不就是造轮子吗，对不对，综上所述直接安装Xcode)、安装node.js没有？没有的话点我下载最新版这就是我们需要的所有工具了，接下来开始更为详细的步骤。"></a>所需要的工具并不多但是很繁琐而且还需要你去下载等待，最差的情况还有可能需要番茄，所需工具有Git(重点就是这个mac上没有单独的Git Ui,而这个工具还正好集成在Xcode里,这时有人想说Brew不香吗直接用它安装Git不好吗，我只想说，呵呵，这货安装也要Git这不就是造轮子吗，对不对，综上所述直接安装Xcode)、安装node.js没有？没有的话<a href="https://nodejs.org/dist/v12.16.3/node-v12.16.3.pkg" target="_blank" rel="noopener">点我下载最新版</a>这就是我们需要的所有工具了，接下来开始更为详细的步骤。</h2><h1 id="安装Hexo并部署"><a href="#安装Hexo并部署" class="headerlink" title="安装Hexo并部署"></a>安装Hexo并部署</h1><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><pre class="line-numbers language-Bash"><code class="language-Bash">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="如下图所示如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入"><a href="#如下图所示如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入" class="headerlink" title="如下图所示如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入"></a>如下图所示<img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/1.png" alt>如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入</h3><pre class="line-numbers language-Bash"><code class="language-Bash">npm install -g npm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="即可更新了，更新完可以执行下一步了"><a href="#即可更新了，更新完可以执行下一步了" class="headerlink" title="即可更新了，更新完可以执行下一步了"></a>即可更新了，更新完可以执行下一步了</h3><h3 id="然后找一个地方新建一个文件夹叫Blog-这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训-然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1"><a href="#然后找一个地方新建一个文件夹叫Blog-这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训-然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1" class="headerlink" title="然后找一个地方新建一个文件夹叫Blog(这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训)然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1"></a>然后找一个地方新建一个文件夹叫Blog(这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训)然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1<a href="2.png"></a></h3><h3 id="现在会弹出一个终端页面你就进入了这个文件夹了，在终端输入"><a href="#现在会弹出一个终端页面你就进入了这个文件夹了，在终端输入" class="headerlink" title="现在会弹出一个终端页面你就进入了这个文件夹了，在终端输入"></a>现在会弹出一个终端页面<img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/3.png" alt>你就进入了这个文件夹了，在终端输入</h3><pre class="line-numbers language-Bash"><code class="language-Bash">hexo init #在当前的文件夹创建Hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面"><a href="#等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面" class="headerlink" title="等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面"></a>等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/4.png" alt></p>
-<h3 id="然后打开Blog文件夹，发现里面是这样的，如下图"><a href="#然后打开Blog文件夹，发现里面是这样的，如下图" class="headerlink" title="然后打开Blog文件夹，发现里面是这样的，如下图"></a>然后打开Blog文件夹，发现里面是这样的，如下图</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/5.png" alt></p>
-<h3 id="双击打开-config-yml里面是站点配置我把重要的写在里面截图给你们看，注意-在这里面代表注释的意思"><a href="#双击打开-config-yml里面是站点配置我把重要的写在里面截图给你们看，注意-在这里面代表注释的意思" class="headerlink" title="双击打开_config.yml里面是站点配置我把重要的写在里面截图给你们看，注意#在这里面代表注释的意思"></a>双击打开_config.yml里面是站点配置我把重要的写在里面截图给你们看，注意#在这里面代表注释的意思</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/6.png" alt><br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/7.png" alt><br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/8.png" alt><br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/9.png" alt></p>
+<h3 id="如下图所示如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入"><a href="#如下图所示如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入" class="headerlink" title="如下图所示如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入"></a>如下图所示<img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/1.png" alt="">如果发现了第二个箭头的报错，不用担心那只是提醒你更新输入</h3><pre class="line-numbers language-Bash"><code class="language-Bash">npm install -g npm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="即可更新了，更新完可以执行下一步了"><a href="#即可更新了，更新完可以执行下一步了" class="headerlink" title="即可更新了，更新完可以执行下一步了"></a>即可更新了，更新完可以执行下一步了</h3><h3 id="然后找一个地方新建一个文件夹叫Blog-这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训-然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1"><a href="#然后找一个地方新建一个文件夹叫Blog-这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训-然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1" class="headerlink" title="然后找一个地方新建一个文件夹叫Blog(这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训)然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1"></a>然后找一个地方新建一个文件夹叫Blog(这里我强烈推荐放到文稿或桌面上因为有iCloud备份以免……血的教训)然后右键服务-新建位于文件夹位置的终端窗口打开它如下图所示1<a href="2.png"></a></h3><h3 id="现在会弹出一个终端页面你就进入了这个文件夹了，在终端输入"><a href="#现在会弹出一个终端页面你就进入了这个文件夹了，在终端输入" class="headerlink" title="现在会弹出一个终端页面你就进入了这个文件夹了，在终端输入"></a>现在会弹出一个终端页面<img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/3.png" alt="">你就进入了这个文件夹了，在终端输入</h3><pre class="line-numbers language-Bash"><code class="language-Bash">hexo init #在当前的文件夹创建Hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面"><a href="#等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面" class="headerlink" title="等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面"></a>等待那烦人的Git下载速度吧，一切就绪后你会看到如下界面</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/4.png" alt=""></p>
+<h3 id="然后打开Blog文件夹，发现里面是这样的，如下图"><a href="#然后打开Blog文件夹，发现里面是这样的，如下图" class="headerlink" title="然后打开Blog文件夹，发现里面是这样的，如下图"></a>然后打开Blog文件夹，发现里面是这样的，如下图</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/5.png" alt=""></p>
+<h3 id="双击打开-config-yml里面是站点配置我把重要的写在里面截图给你们看，注意-在这里面代表注释的意思"><a href="#双击打开-config-yml里面是站点配置我把重要的写在里面截图给你们看，注意-在这里面代表注释的意思" class="headerlink" title="双击打开_config.yml里面是站点配置我把重要的写在里面截图给你们看，注意#在这里面代表注释的意思"></a>双击打开_config.yml里面是站点配置我把重要的写在里面截图给你们看，注意#在这里面代表注释的意思</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/6.png" alt=""><br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/7.png" alt=""><br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/8.png" alt=""><br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/9.png" alt=""></p>
 <h3 id="以上就是站点配置文件的详情了其他的没标注是因为一般用不到"><a href="#以上就是站点配置文件的详情了其他的没标注是因为一般用不到" class="headerlink" title="以上就是站点配置文件的详情了其他的没标注是因为一般用不到"></a>以上就是站点配置文件的详情了其他的没标注是因为一般用不到</h3><h2 id="本地部署Hexo"><a href="#本地部署Hexo" class="headerlink" title="本地部署Hexo"></a>本地部署Hexo</h2><h3 id="把站点配置文件里的名字之类的修改为自己的，之后打开最开始的终端位于Blog文件夹的，输入"><a href="#把站点配置文件里的名字之类的修改为自己的，之后打开最开始的终端位于Blog文件夹的，输入" class="headerlink" title="把站点配置文件里的名字之类的修改为自己的，之后打开最开始的终端位于Blog文件夹的，输入"></a>把站点配置文件里的名字之类的修改为自己的，之后打开最开始的终端位于Blog文件夹的，输入</h3><pre class="line-numbers language-Bash"><code class="language-Bash">hexo g && hexo s # hexo g更新缓存 hexo s开启本地预览<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="之后终端会弹出一个网址右键打开URL"><a href="#之后终端会弹出一个网址右键打开URL" class="headerlink" title="之后终端会弹出一个网址右键打开URL"></a>之后终端会弹出一个网址右键打开URL</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/10.png" alt></p>
-<h3 id="打开以后就会弹出属于你自己的博客了，开不开心"><a href="#打开以后就会弹出属于你自己的博客了，开不开心" class="headerlink" title="打开以后就会弹出属于你自己的博客了，开不开心"></a>打开以后就会弹出属于你自己的博客了，开不开心</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/11.png" alt></p>
+<h3 id="之后终端会弹出一个网址右键打开URL"><a href="#之后终端会弹出一个网址右键打开URL" class="headerlink" title="之后终端会弹出一个网址右键打开URL"></a>之后终端会弹出一个网址右键打开URL</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/10.png" alt=""></p>
+<h3 id="打开以后就会弹出属于你自己的博客了，开不开心"><a href="#打开以后就会弹出属于你自己的博客了，开不开心" class="headerlink" title="打开以后就会弹出属于你自己的博客了，开不开心"></a>打开以后就会弹出属于你自己的博客了，开不开心</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/11.png" alt=""></p>
 <h3 id="这个就已经算初步的配置好了，接下来让我们来美化这个博客"><a href="#这个就已经算初步的配置好了，接下来让我们来美化这个博客" class="headerlink" title="这个就已经算初步的配置好了，接下来让我们来美化这个博客"></a>这个就已经算初步的配置好了，接下来让我们来美化这个博客</h3><h1 id="美化Hexo"><a href="#美化Hexo" class="headerlink" title="美化Hexo"></a>美化Hexo</h1><h2 id="安装matery主题"><a href="#安装matery主题" class="headerlink" title="安装matery主题"></a>安装matery主题</h2><h2 id="我就不再去重复造轮子了，直接引用该主题大佬的配置方法，如有不懂的在下方留言，我会详细解答！"><a href="#我就不再去重复造轮子了，直接引用该主题大佬的配置方法，如有不懂的在下方留言，我会详细解答！" class="headerlink" title="我就不再去重复造轮子了，直接引用该主题大佬的配置方法，如有不懂的在下方留言，我会详细解答！"></a>我就不再去重复造轮子了，直接引用该主题大佬的配置方法，如有不懂的在下方留言，我会详细解答！</h2><blockquote>
 <p>这是一个采用 <code>Material Design</code> 和响应式设计的 Hexo 博客主题。</p>
 </blockquote>
@@ -1010,13 +1010,13 @@ tage:  # 标签
  categories: # 分类
  Hexo博客
 ---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="一个-空格-标题-使用Hexo一个-号空格代表标题-两个-空格代表副标题-三个-代表正文，如下图的格式"><a href="#一个-空格-标题-使用Hexo一个-号空格代表标题-两个-空格代表副标题-三个-代表正文，如下图的格式" class="headerlink" title="一个#空格 标题 使用Hexo一个#号空格代表标题 两个#空格代表副标题 三个###代表正文，如下图的格式"></a>一个#空格 标题 使用Hexo一个#号空格代表标题 两个#空格代表副标题 三个###代表正文，如下图的格式</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/12.png" alt></p>
+<h3 id="一个-空格-标题-使用Hexo一个-号空格代表标题-两个-空格代表副标题-三个-代表正文，如下图的格式"><a href="#一个-空格-标题-使用Hexo一个-号空格代表标题-两个-空格代表副标题-三个-代表正文，如下图的格式" class="headerlink" title="一个#空格 标题 使用Hexo一个#号空格代表标题 两个#空格代表副标题 三个###代表正文，如下图的格式"></a>一个#空格 标题 使用Hexo一个#号空格代表标题 两个#空格代表副标题 三个###代表正文，如下图的格式</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/12.png" alt=""></p>
 <h3 id="这是最最最基本的写作方式了，学会了这个你就可以写出一篇精致的文章了一起来领略Markdown语法的魅力吧"><a href="#这是最最最基本的写作方式了，学会了这个你就可以写出一篇精致的文章了一起来领略Markdown语法的魅力吧" class="headerlink" title="这是最最最基本的写作方式了，学会了这个你就可以写出一篇精致的文章了一起来领略Markdown语法的魅力吧"></a>这是最最最基本的写作方式了，学会了这个你就可以写出一篇精致的文章了一起来领略Markdown语法的魅力吧</h3><h2 id="文章内引用图片"><a href="#文章内引用图片" class="headerlink" title="文章内引用图片"></a>文章内引用图片</h2><h3 id="首先要安装一个插件"><a href="#首先要安装一个插件" class="headerlink" title="首先要安装一个插件"></a>首先要安装一个插件</h3><pre class="line-numbers language-Bash"><code class="language-Bash">npm install hexo-asset-image --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="然后在站点目录修改-config-yml配置文件post-asset-folder项为true"><a href="#然后在站点目录修改-config-yml配置文件post-asset-folder项为true" class="headerlink" title="然后在站点目录修改_config.yml配置文件post_asset_folder项为true"></a>然后在站点目录修改_config.yml配置文件post_asset_folder项为true</h3><h3 id="引用的方法"><a href="#引用的方法" class="headerlink" title="引用的方法"></a>引用的方法</h3><pre class="line-numbers language-Markdown"><code class="language-Markdown">我真是太帅了自拍在下面
 ![](13.png)  # 注意Markdown语法里的所有引用都需要使用英文输入,图片用数字命名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！"><a href="#现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！" class="headerlink" title="现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！"></a>现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！</h3><h1 id="上传Hexo到腾讯云COS或Github"><a href="#上传Hexo到腾讯云COS或Github" class="headerlink" title="上传Hexo到腾讯云COS或Github"></a>上传Hexo到腾讯云COS或Github</h1><h2 id="上传Hexo到腾讯云对象储存-COS-首推国内访问秒开"><a href="#上传Hexo到腾讯云对象储存-COS-首推国内访问秒开" class="headerlink" title="上传Hexo到腾讯云对象储存(COS) 首推国内访问秒开"></a>上传Hexo到腾讯云对象储存(COS) 首推国内访问秒开</h2><h3 id="注册腾讯云账号并创建储存桶"><a href="#注册腾讯云账号并创建储存桶" class="headerlink" title="注册腾讯云账号并创建储存桶"></a>注册腾讯云账号并创建储存桶</h3><h3 id="腾讯云官网传送门-点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。"><a href="#腾讯云官网传送门-点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。" class="headerlink" title="腾讯云官网传送门,点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。"></a><a href="https://cloud.tencent.com/" target="_blank" rel="noopener">腾讯云官网传送门</a>,点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/14.png" alt></p>
+<h3 id="现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！"><a href="#现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！" class="headerlink" title="现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！"></a>现在会写Markdown语法的文章了吧，再不会的话善用搜索引擎哟！</h3><h1 id="上传Hexo到腾讯云COS或Github"><a href="#上传Hexo到腾讯云COS或Github" class="headerlink" title="上传Hexo到腾讯云COS或Github"></a>上传Hexo到腾讯云COS或Github</h1><h2 id="上传Hexo到腾讯云对象储存-COS-首推国内访问秒开"><a href="#上传Hexo到腾讯云对象储存-COS-首推国内访问秒开" class="headerlink" title="上传Hexo到腾讯云对象储存(COS) 首推国内访问秒开"></a>上传Hexo到腾讯云对象储存(COS) 首推国内访问秒开</h2><h3 id="注册腾讯云账号并创建储存桶"><a href="#注册腾讯云账号并创建储存桶" class="headerlink" title="注册腾讯云账号并创建储存桶"></a>注册腾讯云账号并创建储存桶</h3><h3 id="腾讯云官网传送门-点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。"><a href="#腾讯云官网传送门-点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。" class="headerlink" title="腾讯云官网传送门,点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。"></a><a href="https://cloud.tencent.com/" target="_blank" rel="noopener">腾讯云官网传送门</a>,点击该网址注册账号，并完成实名制，在控制台找到对象储存对象储存，创建储存桶。</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/14.png" alt=""></p>
 <h3 id="其中：名称随意；所属地域选择离你较近的，这样你的访问速度体验会更好；访问权限选择公有读私有写其他选项随意。"><a href="#其中：名称随意；所属地域选择离你较近的，这样你的访问速度体验会更好；访问权限选择公有读私有写其他选项随意。" class="headerlink" title="其中：名称随意；所属地域选择离你较近的，这样你的访问速度体验会更好；访问权限选择公有读私有写其他选项随意。"></a>其中：名称随意；所属地域选择离你较近的，这样你的访问速度体验会更好；访问权限选择公有读私有写其他选项随意。</h3><ul>
-<li>开启静态网站<br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/15.png" alt></li>
+<li>开启静态网站<br><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/15.png" alt=""></li>
 </ul>
 <h3 id="按照上图指示配置好相关信息，至此将源码上传至该储存桶即可点击访问节点访问你的网站。"><a href="#按照上图指示配置好相关信息，至此将源码上传至该储存桶即可点击访问节点访问你的网站。" class="headerlink" title="按照上图指示配置好相关信息，至此将源码上传至该储存桶即可点击访问节点访问你的网站。"></a>按照上图指示配置好相关信息，至此将源码上传至该储存桶即可点击访问节点访问你的网站。</h3><ul>
 <li>创建密钥<br>在控制台找到API密钥管理，创建密钥。</li>
@@ -1036,9 +1036,9 @@ cosAppid:  1257072316
 remotePath: <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="其中type：照填。"><a href="#其中type：照填。" class="headerlink" title="其中type：照填。"></a>其中type：照填。</h3><h3 id="cosRegion：根据你选择的位置填写。（可从储存桶基本信息所属地域查看）"><a href="#cosRegion：根据你选择的位置填写。（可从储存桶基本信息所属地域查看）" class="headerlink" title="cosRegion：根据你选择的位置填写。（可从储存桶基本信息所属地域查看）"></a>cosRegion：根据你选择的位置填写。（可从储存桶基本信息所属地域查看）</h3><h3 id="cosSecretId：填写之前创建的密钥id"><a href="#cosSecretId：填写之前创建的密钥id" class="headerlink" title="cosSecretId：填写之前创建的密钥id"></a>cosSecretId：填写之前创建的密钥id</h3><h3 id="cosSecretKey：填写id对应的key"><a href="#cosSecretKey：填写id对应的key" class="headerlink" title="cosSecretKey：填写id对应的key"></a>cosSecretKey：填写id对应的key</h3><h3 id="cosBucket：填写储存同的名称"><a href="#cosBucket：填写储存同的名称" class="headerlink" title="cosBucket：填写储存同的名称"></a>cosBucket：填写储存同的名称</h3><h3 id="cosAppid：填写空间名称中的数字"><a href="#cosAppid：填写空间名称中的数字" class="headerlink" title="cosAppid：填写空间名称中的数字"></a>cosAppid：填写空间名称中的数字</h3><h3 id="注意：cosBucket只填写不带数字的名称，也就是刚开始创建时输入的名称。"><a href="#注意：cosBucket只填写不带数字的名称，也就是刚开始创建时输入的名称。" class="headerlink" title="注意：cosBucket只填写不带数字的名称，也就是刚开始创建时输入的名称。"></a>注意：cosBucket只填写不带数字的名称，也就是刚开始创建时输入的名称。</h3><h3 id="cosAppid则填写你所填名称后面的数字。这两个切记不要填错哦。将上述配置完成后，可以通过"><a href="#cosAppid则填写你所填名称后面的数字。这两个切记不要填错哦。将上述配置完成后，可以通过" class="headerlink" title="cosAppid则填写你所填名称后面的数字。这两个切记不要填错哦。将上述配置完成后，可以通过"></a>cosAppid则填写你所填名称后面的数字。这两个切记不要填错哦。将上述配置完成后，可以通过</h3></li>
 </ul>
-<h3 id="hexo-g-amp-amp-hexo-d测试。如下图，即可点击访问节点访问你的博客啦！"><a href="#hexo-g-amp-amp-hexo-d测试。如下图，即可点击访问节点访问你的博客啦！" class="headerlink" title="hexo g &amp;&amp; hexo d测试。如下图，即可点击访问节点访问你的博客啦！"></a>hexo g &amp;&amp; hexo d测试。如下图，即可点击访问节点访问你的博客啦！</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/16.png" alt></p>
+<h3 id="hexo-g-amp-amp-hexo-d测试。如下图，即可点击访问节点访问你的博客啦！"><a href="#hexo-g-amp-amp-hexo-d测试。如下图，即可点击访问节点访问你的博客啦！" class="headerlink" title="hexo g &amp;&amp; hexo d测试。如下图，即可点击访问节点访问你的博客啦！"></a>hexo g &amp;&amp; hexo d测试。如下图，即可点击访问节点访问你的博客啦！</h3><p><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/16.png" alt=""></p>
 <h3 id="推送成功"><a href="#推送成功" class="headerlink" title="推送成功"></a>推送成功</h3><h3 id="至此，基本配置就结束啦。如果你恰巧财力雄厚有个自己的域名的话，我们可以绑定自己的域名。"><a href="#至此，基本配置就结束啦。如果你恰巧财力雄厚有个自己的域名的话，我们可以绑定自己的域名。" class="headerlink" title="至此，基本配置就结束啦。如果你恰巧财力雄厚有个自己的域名的话，我们可以绑定自己的域名。"></a>至此，基本配置就结束啦。如果你恰巧财力雄厚有个自己的域名的话，我们可以绑定自己的域名。</h3><ul>
-<li>绑定自有域名<h3 id="打开对象储存域名管理，绑定自有域名。"><a href="#打开对象储存域名管理，绑定自有域名。" class="headerlink" title="打开对象储存域名管理，绑定自有域名。"></a>打开对象储存域名管理，绑定自有域名。</h3><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/17.png" alt><h3 id="编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。"><a href="#编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。" class="headerlink" title="编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。"></a>编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。</h3></li>
+<li>绑定自有域名<h3 id="打开对象储存域名管理，绑定自有域名。"><a href="#打开对象储存域名管理，绑定自有域名。" class="headerlink" title="打开对象储存域名管理，绑定自有域名。"></a>打开对象储存域名管理，绑定自有域名。</h3><img src="/mac-ping-tai-da-jian-shu-yu-zi-ji-de-bo-ke-hexo/17.png" alt=""><h3 id="编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。"><a href="#编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。" class="headerlink" title="编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。"></a>编辑自定义域名，源站类型选择静态网站源站，做好域名解析，就可通过域名访问啦。此操作仅支持已备案域名。</h3></li>
 <li>网站展示：<a href="https://blog.xiaolegun.cn">xiaoleGun</a></li>
 </ul>
 <h2 id="上传Hexo到Github"><a href="#上传Hexo到Github" class="headerlink" title="上传Hexo到Github"></a>上传Hexo到Github</h2><p>在本教程中，我们将会使用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 将 Hexo 博客部署到 GitHub Pages 上。Travis CI 对于开源 repository 是免费的，但是这意味着你的站点文件将会是公开的。如果你希望你的站点文件不被公开，请直接前往本文 [私有 Repository](#私有 Repository) 部分。</p>
@@ -1098,7 +1098,25 @@ deploy:
 <li><a href="https://github.com/hexojs/awesome-hexo" target="_blank" rel="noopener">Awesome Hexo</a></li>
 <li><a href="https://www.baidu.com/s?wd=Hexo%20GitHub" target="_blank" rel="noopener">在百度上搜索 “Hexo GitHub”</a></li>
 </ul>
-<h2 id="到这里了，累死我了，正式收工，本教程完结！"><a href="#到这里了，累死我了，正式收工，本教程完结！" class="headerlink" title="到这里了，累死我了，正式收工，本教程完结！"></a>到这里了，累死我了，正式收工，本教程完结！</h2>
+<h2 id="到这里了，累死我了，正式收工，本教程完结！"><a href="#到这里了，累死我了，正式收工，本教程完结！" class="headerlink" title="到这里了，累死我了，正式收工，本教程完结！"></a>到这里了，累死我了，正式收工，本教程完结！</h2><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1680,7 +1698,7 @@ deploy:
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.5k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             

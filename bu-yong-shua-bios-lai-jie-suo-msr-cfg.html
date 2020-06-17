@@ -436,7 +436,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.6k
                 </div>
                 
 
@@ -460,19 +460,37 @@
             <div id="articleContent">
                 <p>今天我们来学习不刷BIOS来解锁MSR(CFG)锁，本不想写这篇文章但没啥事干还是写了，而且云屋小站的那篇文章，有可能大部分人看不懂，我尽量把这个教程写的清楚明白一点让各位看的比较爽，但配图我还是借用<a href="https://www.misonsky.cn/115.html" target="_blank" rel="noopener">云屋小站</a>的配图，感谢了！！！下面我们开始我们的教程吧！！！</p>
 <p>我们需要提取BIOS，DELL用户请往下看部分机型BIOS是EXE格式的也需要往下看，如果是BIN或ROM格式的你就跳过吧!(PS:部分的AMI的BIOS可以提取BIOS，可以自己确定。)我下面先讲DELL机型的<br>。</p>
-<p>(注意以下操作在Windows进行)首先进入<a href="https://www.dell.com/support/home/cn/zh/cnbsd1?app=products&~ck=mn" target="_blank" rel="noopener">DELL官网</a>搜索自己的机型并下载EXE文件的BIOS，然后在任意盘符创建一个文件夹，并取名叫做1把EXE格式的BIOS放到这个文件夹并把这个BIOS取名叫做1，然后打开CMD以管理员来运行，输入D:/进入D盘根据你的盘符来选择，之后CD 1进入文件夹，然后在输入1 –writeromfile之后你会发现在1的文件夹中多出一个ROM格式的文件这个就是我们的BIOS了，接下来你们可以跳过了，我要讲解AMI的方法了！！！</p>
-<p>首先在win下载一个软件Universal BIOS Backup ToolKit 2.0.exe<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/Universal+BIOS+Backup+ToolKit+2.0.exe" target="_blank" rel="noopener">点我下载</a>下载之后直接提取就ok了<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/1.jpg" alt><br>然后你们也会得到一个rom格式的文件。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/2.jpg" alt></p>
+<p>(注意以下操作在Windows进行)首先进入<a href="https://www.dell.com/support/home/cn/zh/cnbsd1?app=products&amp;~ck=mn" target="_blank" rel="noopener">DELL官网</a>搜索自己的机型并下载EXE文件的BIOS，然后在任意盘符创建一个文件夹，并取名叫做1把EXE格式的BIOS放到这个文件夹并把这个BIOS取名叫做1，然后打开CMD以管理员来运行，输入D:/进入D盘根据你的盘符来选择，之后CD 1进入文件夹，然后在输入1 –writeromfile之后你会发现在1的文件夹中多出一个ROM格式的文件这个就是我们的BIOS了，接下来你们可以跳过了，我要讲解AMI的方法了！！！</p>
+<p>首先在win下载一个软件Universal BIOS Backup ToolKit 2.0.exe<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/Universal+BIOS+Backup+ToolKit+2.0.exe" target="_blank" rel="noopener">点我下载</a>下载之后直接提取就ok了<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/1.jpg" alt=""><br>然后你们也会得到一个rom格式的文件。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/2.jpg" alt=""></p>
 <p>接下来所有人看这里！！！我们现在需要下载一个软件，此软件是UEFITool工具它可以读取BIOS此软件有win、mac、Linux版本，这里我以mac版进行演示，mac版<a href="https://github.com/LongSoft/UEFITool" target="_blank" rel="noopener">点我下载</a></p>
-<p>打开UEFITool软件，菜单栏选择File&gt;Open image file…<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/3.jpg" alt><br>选择你的rom格式的bios文件或bin格式然后会出现以下界面<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/4.jpg" alt>同时按下alt+F（我这里是PS2键盘，如果你是USB键盘，那就按Win+F）打开搜索框，选择Text，输入CFG Lock，点OK。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/5.jpg" alt><br>得到如下信息<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/6.jpg" alt>双击这条信息，软件会自动定位到含有CFG Lock信息的模块。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/7.jpg" alt><br>右键该模块，选择extractbody，提取出该模块。<br><img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/8.png" alt> <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/9.jpg" alt><br>接下来，我们需要把该模块转换成我们能读懂的信息。我们需要借助ifrextract这个工具。官网点我打开，<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/ifrextract_v0.3.6.osx.zip" target="_blank" rel="noopener">点我下载</a>。把上面提取出来的模块更名为1.bin（为了方便操作），把ifrextract文件放到桌面上。打开终端，依次执行以下操作：cd ~/desktop 进入桌面这个目录。转换信息 ./ifrextract 1.bin 1.txt <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/10.jpg" alt><br>这样，我们会看到桌面上生成了一个叫1.txt的文件，里面就是转换出来的我们能读懂的BIOS模块信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/11.jpg" alt></p>
-<h2 id="寻找需要的偏移量"><a href="#寻找需要的偏移量" class="headerlink" title="寻找需要的偏移量"></a>寻找需要的偏移量</h2><p>打开上一步转换出来的1.txt文件，同时按下alt+F（这是ps2键盘的，USB键盘使用Win+F），输入我们想要修改的东西名称进行查找。例如，我们想要解锁MSR 0xE2，那就输入CFG Lock进行搜索<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/12.jpg" alt>提取整理出有用的信息：</p>
+<p>打开UEFITool软件，菜单栏选择File&gt;Open image file…<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/3.jpg" alt=""><br>选择你的rom格式的bios文件或bin格式然后会出现以下界面<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/4.jpg" alt="">同时按下alt+F（我这里是PS2键盘，如果你是USB键盘，那就按Win+F）打开搜索框，选择Text，输入CFG Lock，点OK。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/5.jpg" alt=""><br>得到如下信息<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/6.jpg" alt="">双击这条信息，软件会自动定位到含有CFG Lock信息的模块。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/7.jpg" alt=""><br>右键该模块，选择extractbody，提取出该模块。<br><img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/8.png" alt=""> <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/9.jpg" alt=""><br>接下来，我们需要把该模块转换成我们能读懂的信息。我们需要借助ifrextract这个工具。官网点我打开，<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/ifrextract_v0.3.6.osx.zip" target="_blank" rel="noopener">点我下载</a>。把上面提取出来的模块更名为1.bin（为了方便操作），把ifrextract文件放到桌面上。打开终端，依次执行以下操作：cd ~/desktop 进入桌面这个目录。转换信息 ./ifrextract 1.bin 1.txt <img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/10.jpg" alt=""><br>这样，我们会看到桌面上生成了一个叫1.txt的文件，里面就是转换出来的我们能读懂的BIOS模块信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/11.jpg" alt=""></p>
+<h2 id="寻找需要的偏移量"><a href="#寻找需要的偏移量" class="headerlink" title="寻找需要的偏移量"></a>寻找需要的偏移量</h2><p>打开上一步转换出来的1.txt文件，同时按下alt+F（这是ps2键盘的，USB键盘使用Win+F），输入我们想要修改的东西名称进行查找。例如，我们想要解锁MSR 0xE2，那就输入CFG Lock进行搜索<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/12.jpg" alt="">提取整理出有用的信息：</p>
 <p>One Of: CFG lock, VarStoreInfo(VarOffset/VarName): 0x62, VarStore: 0x1<br>One Of Option: Disabled, Value (8 bit): 0x0<br>One Of Option: Enabled, Value (8 bit): 0x1</p>
 <p>其中，VarStoreInfo值以及Option中的Value值就是我们要找的。VarStoreInfo值是CFG Lock这个选项的地址，也可以说其在BIOS中的偏移量。后面的VarStore是当前值（BIOS默认值），为0x1      0x1对应下面的Option里就是Enabled，意思就是CFGLock这个选择默认被打开了，也就是说MSR 0xE2默认被锁定了。而我们想要解锁它就需要把该选择修改成0x0的Disabled，就是要把0x62这个地址上的数值修改为0x0</p>
 <h2 id="修改BIOS隐藏设置"><a href="#修改BIOS隐藏设置" class="headerlink" title="修改BIOS隐藏设置"></a>修改BIOS隐藏设置</h2><p>要修改BIOS隐藏设置，我们需要在UEFI shell里使用setup_var命令。datasone修改了一份支持setup_var命令的grub引导，我们可以借助这个工具。项目<a href="https://www.misonsky.cn/storge/?/resources/无需刷BIOS！使用setup_var命令解锁MSR%200xE2锁定，修改dvmt值，开启AHCI/modGRUBShell.efi" target="_blank" rel="noopener">点我下载</a>使用磁盘工具，把U盘抹掉，方案用主引导记录，格式选择MS-DOS（FAT）然后在U盘分区里新建一个EFI文件夹，EFI文件夹里新建一个BOOT文件夹，把下载的modGRUBShell.efi更名为BOOTX64.efi，放入BOOT文件夹里面。就这样，一个支持setup_var命令的grub引导启动盘就制作完成了。进BIOS里设置第一启动项为U盘（UEFI模式启动）。启动grub后，我们可以开始使用setup_var命令了。</p>
-<p>我们开始来解锁MSR 0xE2输入:<br>setup_var_3 0x62<br>该命令是查询0x62这个地址（偏移量）的数值，0x62是我们在上面一步中查找到的CFG-Lock选项的地址，从下图中我们可以看到该0x62地址数值为0x01，即对应Enabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/13.jpg" alt><br>输入:<br>setup_var_3 0x62 0x00<br>该命令是修改0x62这个地址的数值为0x00，也就是把CFG-Lock这个选项设置为Disabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/14.jpg" alt></p>
+<p>我们开始来解锁MSR 0xE2输入:<br>setup_var_3 0x62<br>该命令是查询0x62这个地址（偏移量）的数值，0x62是我们在上面一步中查找到的CFG-Lock选项的地址，从下图中我们可以看到该0x62地址数值为0x01，即对应Enabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/13.jpg" alt=""><br>输入:<br>setup_var_3 0x62 0x00<br>该命令是修改0x62这个地址的数值为0x00，也就是把CFG-Lock这个选项设置为Disabled。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/14.jpg" alt=""></p>
 <p>每一个BIOS的设置选项地址（偏移量）都是不一样的，不检查BIOS设置地址而直接使用setup_var命令修改是十分危险的事情！！！！！！！！！！！！！！！！！一点要注意！！！！</p>
-<h2 id="验证结果"><a href="#验证结果" class="headerlink" title="验证结果"></a>验证结果</h2><p>setup_var命令执行完毕后，我们怎么知道命令是否生效了呢？<br>其实不难，只要使用一些辅助软件看一下即可。<br>例如，CFG-Lock这个选项，我们可以在Mac里使用AppleIntelInfo驱动打印CPU相关状态信息，Hackintool工具已经集成了该驱动，所以我们可以很方便地获取相关信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/15.jpg" alt><br>由上图可知，CFG-Lock已经成功解锁了。那么，你就可以删掉KernelPM补丁（Haswell+）或AppleIntelCPUPM（Haswell以前的）补丁，直接使用原生电源管理了。（Tips：用以防止开启HWP后奔溃的MSR_0xE2__xcpm_idle_instant_reboot内核补丁也不再需要了哦！）</p>
+<h2 id="验证结果"><a href="#验证结果" class="headerlink" title="验证结果"></a>验证结果</h2><p>setup_var命令执行完毕后，我们怎么知道命令是否生效了呢？<br>其实不难，只要使用一些辅助软件看一下即可。<br>例如，CFG-Lock这个选项，我们可以在Mac里使用AppleIntelInfo驱动打印CPU相关状态信息，Hackintool工具已经集成了该驱动，所以我们可以很方便地获取相关信息。<img src="/bu-yong-shua-bios-lai-jie-suo-msr-cfg/15.jpg" alt=""><br>由上图可知，CFG-Lock已经成功解锁了。那么，你就可以删掉KernelPM补丁（Haswell+）或AppleIntelCPUPM（Haswell以前的）补丁，直接使用原生电源管理了。（Tips：用以防止开启HWP后奔溃的MSR_0xE2__xcpm_idle_instant_reboot内核补丁也不再需要了哦！）</p>
 <p>各位朋友们到了这一步我们的MSR（CFG）就已经解锁成功了！！！大家以后可以抛弃一些补丁了！！我制作的镜像马上就会发布在我的博客上！希望大家多多的支持并鼓励我！！拜拜！</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1034,7 +1052,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.5k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             

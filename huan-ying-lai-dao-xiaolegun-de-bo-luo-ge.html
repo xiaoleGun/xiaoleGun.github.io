@@ -436,14 +436,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -464,7 +464,25 @@
 <p>好了关于我的事情就介绍到这里了，拜拜下面是我的Blog的介绍！！！</p>
 <p>各位读客们，我的Blog现在非常简陋而我也不会美化，在此放上我的QQ/微信：1592501605   电话：18513153507  邮箱：<a href="mailto:1592501605@qq.com">1592501605@qq.com</a>希望大家有好的创意加我q或微信提交给我，当然也可以发邮箱但我一个月只看一回，现在我的标签和分类不咋会使用我也很烦。跪求各位帮我看看我的blog并完善，</p>
 <p>我的blog现在搜索功能正常，我也加入了aplayer音乐播放器的功能有可能只有电脑可以正常使用，手机不行在右下角点击三横杠就有音乐播放器了。。。想听自己的歌单的话给我往qq或微信说一下吧，我统计开放歌单id的功能。就先这样吧，拜拜，宅在家太烦了，在此由衷的感谢各位给我的支持与帮助，相信我以后会创作出更优质的文章，但是该水的还是得水！！！</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1015,7 +1033,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.5k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             
